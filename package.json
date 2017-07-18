@@ -17,10 +17,13 @@
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
     "vue": "^2.1.10"
+<<<<<<< HEAD
   },
   "dependencies": {
     "bower": "^1.8.0",
     "gulp-install": "^1.1.0",
     "gulp-production-package-json": "^1.0.2"
+=======
+>>>>>>> 3286041c1c35bf2dcf44203b613236d926746093
   }
 }

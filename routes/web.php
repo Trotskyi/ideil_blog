@@ -39,7 +39,11 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('comments/{id}/delete', ['uses' => 'CommentsController@delete', 'as' => 'comments.delete']);
 
     //Main page
+<<<<<<< HEAD
     Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])->where('slug', '[\w\d\-\_]+');
+=======
+    Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])/*->where('slug', '[\w\d\-\_]+')*/;
+>>>>>>> 3286041c1c35bf2dcf44203b613236d926746093
     Route::get('blog', ['uses' => 'BlogController@getIndex', 'as' => 'blog.index']);
     Route::get('contact', 'PagesController@getContact');
     Route::post('contact', 'PagesController@postContact');
@@ -51,4 +55,13 @@ Route::group(['middleware' => ['web']], function () {
 
 Auth::routes();
 
+<<<<<<< HEAD
+=======
+Route::get('/', 'PagesController@getIndex')->name('main');
+
+
+
+Auth::routes();
+
+>>>>>>> 3286041c1c35bf2dcf44203b613236d926746093
 Route::get('/home', 'HomeController@index')->name('home');

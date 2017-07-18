@@ -3,7 +3,10 @@
     use Ideal\Post;
     use Ideal\Tag;
     use Ideal\Category;
+<<<<<<< HEAD
     use Illuminate\Support\Str;
+=======
+>>>>>>> 3286041c1c35bf2dcf44203b613236d926746093
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +34,7 @@ $factory->define(Ideal\User::class, function (Faker\Generator $faker) {
 
 $factory->define(Ideal\Post::class, function (Faker\Generator $faker) {
 
+<<<<<<< HEAD
     $title = $faker->sentence();
     $slug = Str::slug($title);
 
@@ -38,6 +42,12 @@ $factory->define(Ideal\Post::class, function (Faker\Generator $faker) {
         'title' => $title,
         'body' => $faker->text(140),
         'slug' => $slug,
+=======
+    return [
+        'title' => $faker->sentence(2),
+        'body' => $faker->text(140),
+        'slug' => $faker->sentence(1),
+>>>>>>> 3286041c1c35bf2dcf44203b613236d926746093
         'image' => $faker->imageUrl($width = 640, $height = 480),
         'category_id' => Category::all()->random()->id,
 

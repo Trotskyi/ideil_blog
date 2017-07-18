@@ -3,6 +3,10 @@
 namespace Ideal\Providers;
 
 use Illuminate\Support\ServiceProvider;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Schema;
+>>>>>>> 3286041c1c35bf2dcf44203b613236d926746093
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +17,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+<<<<<<< HEAD
         //
+=======
+        Schema::defaultStringLength(150);
+>>>>>>> 3286041c1c35bf2dcf44203b613236d926746093
     }
 
     /**

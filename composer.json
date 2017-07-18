@@ -14,7 +14,10 @@
         "mews/purifier": "^2.0"
     },
     "require-dev": {
+<<<<<<< HEAD
         "fzaninotto/faker": "~1.4",
+=======
+>>>>>>> 3286041c1c35bf2dcf44203b613236d926746093
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7"
     },
